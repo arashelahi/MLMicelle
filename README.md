@@ -1,9 +1,10 @@
-# MLMicel
-The MLMicel package enables the detection of separate micelles, using an unsupervised machine learning-based algorithm. This model is particularly developed for the detection of separate polymeric micelles, but can be utilized for other molecular aggregates.
+# MLMicelle
+The MLMicelle package enables the detection of separate micelles, using an unsupervised machine learning-based algorithm. This model is particularly developed for the detection of separate polymeric micelles, but can be utilized for other molecular aggregates.
 
 ## Reference
+Please cite the following paper if you use the MLMi
 
-## The funtionalities of the MLMicel:
+## The funtionalities of the MLMicelle:
 1. Identification of the separate micelles.
 2. Quantification of the structural properties of sphericacl micelles, such as micelle size, micelle core size, etc.
 3. Quantification of the diffusion coefficients of micelles.
@@ -17,7 +18,7 @@ The MLMicel package enables the detection of separate micelles, using an unsuper
 # Installation
 Cloning the repository and creating a conda environment.
 ``` 
-git clone https://github.com/arashelahi/MLMicel.git
+git clone https://github.com/arashelahi/MLMicelle.git
 cd MLMicelle
 conda create -n MLMicelle
 ```
