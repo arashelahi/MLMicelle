@@ -2,7 +2,7 @@
 The MLMicelle package enables the detection of separate micelles, using an unsupervised machine learning-based algorithm. This model is particularly developed for the detection of separate polymeric micelles, but can be utilized for other molecular aggregates.
 
 ## Reference
-Please cite the following paper if you use the MLMicelle:
+Please cite the following paper if you use the MLMicelle package:
 
 Elahi, A.; Bidault, X.; Chaudhuri, S. Temperature-transferable coarse-grained model for poly(propylene oxide) to study thermo-responsive behavior of triblock copolymers. J. Phys. Chem. B 2022, 126, 292– 307,  DOI: 10.1021/acs.jpcb.1c06318
 
@@ -11,7 +11,7 @@ Elahi, A.; Bidault, X.; Chaudhuri, S. Temperature-transferable coarse-grained mo
 1. Identification of the separate micelles.
 2. Quantification of the structural properties of sphericacl micelles, such as micelle size, micelle core size, etc.
 3. Quantification of the diffusion coefficients of micelles.
-4. 4. Detection of the shape of the micelles, e.g., spherical, cylinderical, etc.
+4. Detection of the shape of the micelles, e.g., spherical, cylinderical, etc.
 
 <img width="700" alt="Fig1" src="https://github.com/user-attachments/assets/52c20287-a657-415b-8fe4-feaadb5fd4d4">
 <img width="700" alt="Fig2" src="https://github.com/user-attachments/assets/33e645c9-bd44-436e-be0c-7f36470d4135">
