@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.cluster import DBSCAN
 
 
-def clustering(data,PO_bead):
+def clustering(data,PO_bead='PO40'):
     data_fit               = data.loc[data['atom_name']==PO_bead,'x':'z']## data for clustering is only based on PO
     clustering             = DBSCAN(eps=0.47, min_samples=3).fit(data_fit) ## DBSCAN is used to do clustering
     data_fit["clusters"]   = clustering.labels_.astype(int) ## add the clusters to data_fit

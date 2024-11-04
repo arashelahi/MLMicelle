@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 from matplotlib.patches import Circle
 import seaborn as sns
 
-def clusters_2D(data_final,PO_bead):  
+def clusters_2D(data_final):  
     fig , ax = plt.subplots(figsize=(3.0,4))
     font_size = 12
     data_final.plot(
