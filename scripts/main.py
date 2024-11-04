@@ -1,7 +1,7 @@
 # # import the file
 import numpy as np
 # import pandas as pd
-import traj_reading  as trj
+import traj_reader  as trj
 import sys
 import os
 import clustering as clst
