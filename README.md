@@ -2,7 +2,10 @@
 The MLMicelle package enables the detection of separate micelles, using an unsupervised machine learning-based algorithm. This model is particularly developed for the detection of separate polymeric micelles, but can be utilized for other molecular aggregates.
 
 ## Reference
-Please cite the following paper if you use the MLMi
+Please cite the following paper if you use the MLMicelle:
+
+Elahi, A.; Bidault, X.; Chaudhuri, S. Temperature-transferable coarse-grained model for poly(propylene oxide) to study thermo-responsive behavior of triblock copolymers. J. Phys. Chem. B 2022, 126, 292– 307,  DOI: 10.1021/acs.jpcb.1c06318
+![alt text](image.png)
 
 ## The funtionalities of the MLMicelle:
 1. Identification of the separate micelles.
