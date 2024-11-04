@@ -21,6 +21,25 @@ The MLMicel package enables the detection of separate micelles, using an unsuper
 
 
 # Installation
+Cloning the repository and creating a conda environment.
+``` 
+git clone https://github.com/arashelahi/MLMicel.git
+cd MLMicelle
+conda create -n MLMicelle
+```
+Installing the prerequisite packages
+```
+pip install numpy
+pip install scikit-learn
+pip install pandas
+pip install matplotlib
+pip install seaborn
+```
 
+Installing the package
+```
+pip install -e
+
+```
 # Using the Model
 
