@@ -1,0 +1,13 @@
+setup.py
+analysis/__init__.py
+analysis/diffusion_coef.py
+analysis/str_anal.py
+clustering/__init__.py
+clustering/cluster.py
+clustering/index_gener.py
+micelle.egg-info/PKG-INFO
+micelle.egg-info/SOURCES.txt
+micelle.egg-info/dependency_links.txt
+micelle.egg-info/top_level.txt
+visualization/__init__.py
+visualization/plots.py
