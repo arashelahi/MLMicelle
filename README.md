@@ -36,7 +36,7 @@ pip install seaborn
 
 Installing the package
 ```
-pip install -e
+pip install .
 
 ```
 # Using the Model
