@@ -1,6 +1,28 @@
-__pycache__/
-*.pyc
-.DS_Store
-env/
-.vscode/
+# =========================
+# System-Specific Ignored Files
+# =========================
+.DS_Store    # macOS system file
+
+# =========================
+# Python-Related Ignored Files
+# =========================
+__pycache__/   # Python cache directory
+*.pyc          # Compiled Python files
+
+# =========================
+# Virtual Environment
+# =========================
+env/           # Local Python virtual environment
+
+# =========================
+# Editor & IDE Config Files
+# =========================
+.vscode/       # VS Code settings
+
+# =========================
+# Project-Specific Ignored Files
+# =========================
+data/Indices/  # Ignore all files in data/Indices/
+data/output/   # Ignore all files in data/output/
+scripts/Local/ # Ignore all files in scripts/Local/
 

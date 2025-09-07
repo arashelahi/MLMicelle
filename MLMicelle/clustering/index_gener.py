@@ -29,9 +29,9 @@ def index_gen(data_final,PO_bead,index_names): ## preparing molecule, PO and all
     os.system('rm  %s %s %s ' % (clus_P1_file,clus_all_file,clus_moldcule_file))
     for i in cluster_vec: ## iterate over all existing clusters
         clus_cont=data_final[data_final['clusters']==i] ## extract data of i-th cluters
-        P1_numb=(clus_cont[clus_cont['Bead']==PO_bead].index+1).tolist() ## PO beads of i-th cluster
+        P1_numb=(clus_cont[clus_cont['atom_name']==PO_bead].index+1).tolist() ## PO beads of i-th cluster
         all_numb=(clus_cont.index+1).tolist() ## all beads of i-th cluster
-        molecule_numb=sorted([int(x[:-4]) for x in np.unique(clus_cont['PEPP']).tolist()]) ## molecules of i-th cluster
+        molecule_numb=sorted([x for x in np.unique(clus_cont['residue_number']).tolist()]) ## molecules of i-th cluster
         indexing(clus_P1_file, P1_numb, i)
         indexing(clus_all_file, all_numb, i)
         indexing(clus_moldcule_file, molecule_numb, i)
