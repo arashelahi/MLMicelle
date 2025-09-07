@@ -32,6 +32,7 @@ pip install scikit-learn
 pip install pandas
 pip install matplotlib
 pip install seaborn
+pip install --upgrade MDAnalysis
 ```
 
 Installing the package
@@ -45,25 +46,32 @@ Loading the clustering model
 ```
 from   MLMicelle.utils import traj_reader as trj
 import MLMicelle.clustering as clst
+import MLMicelle.analysis as mic_anal
+
 ```
 
 Loading the GROMACS generated files readers.
 
 ```
+import MDAnalysis as mda
 from   MLMicelle.utils import traj_reader as trj
 ```
 
 Detect the micelles using the spatial coordinates.
 
 ```
-traj_file='coord.gro' ## trajectory file
-coord_data= trj.gro_reader(traj_file)
-clustered_data = clst.clustering(pd_data)
+# Path to the trajectory and topology files
+traj_dir = './data/input/' 
+# load the trajectory file using MDAnalysis
+u = mda.Universe(traj_dir + '/md.tpr', traj_dir + '/md_clus.gro')
+# Process the Trajectory Information to a pd.DataFrame
+clustered_data = clst.clustering(u, bead_type='PO55') 
 ```
-Measuring the structural properties of micelles, i.e., micele size, micelle core size, and aggregation number.
+Measuring the structural properties of micelles, i.e., micele size, micelle core size, aggregation number, and anisotropic shape
 
 ```
-import MLMicelle.analysis as mic_anal
-mice_size, core_size, agg_numb mic_anal.analysis(clustered_data)
+mice_size, core_size, agg_numb, anisotropy =  mic_anal.analysis(u, clustered_data) 
+
 
 ```
+
