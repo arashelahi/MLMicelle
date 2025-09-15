@@ -37,7 +37,7 @@ pip install --upgrade MDAnalysis
 
 Installing the package
 ```
-pip install .
+pip install -e .
 
 ```
 # Using the Model
@@ -74,4 +74,5 @@ mice_size, core_size, agg_numb, anisotropy =  mic_anal.analysis(u, clustered_dat
 
 
 ```
+
 
